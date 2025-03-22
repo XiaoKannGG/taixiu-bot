@@ -4,11 +4,10 @@ import sqlite3
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime
 import time
-import os  # Thêm để dùng biến môi trường
 
-# Khởi tạo bot với biến môi trường
-bot = telebot.TeleBot(os.getenv("TELEGRAM_BOT_TOKEN"))
-ADMIN_ID = int(os.getenv("ADMIN_ID"))  # Chuyển thành int từ string
+# Khởi tạo bot với token mới
+bot = telebot.TeleBot("7755493544:AAHhJld78NotMTwGdySlOuVmJRq2UEVnGFE")
+ADMIN_ID = 5319454673  # Giữ nguyên ID admin của bạn
 
 # Thông tin ngân hàng
 BANK_INFO = """
